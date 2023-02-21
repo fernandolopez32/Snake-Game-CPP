@@ -64,3 +64,6 @@ bin/
 *.tmp
 *.log
 *.bak
+
+SFML-2.5.1
+
