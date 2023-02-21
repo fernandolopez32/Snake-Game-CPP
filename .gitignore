@@ -30,3 +30,37 @@
 *.exe
 *.out
 *.app
+
+# Compiled object files
+*.o
+*.obj
+
+# Compiled binary files
+*.exe
+*.out
+
+# Build directories
+build/
+cmake-build-debug/
+Debug/
+Release/
+
+# IDE and editor files
+.vscode/
+.idea/
+.DS_Store
+
+# Dependency directories
+vendor/
+lib/
+bin/
+
+# Compiler and linker generated files
+*.dSYM/
+*.gcno
+*.gcda
+
+# Temporary files
+*.tmp
+*.log
+*.bak
