@@ -2,64 +2,45 @@
 
 int main()
 {
-    sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
-    sf::CircleShape shape(100.f);
-    shape.setFillColor(sf::Color::Green);
+    // sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
+    // sf::CircleShape shape(100.f);
+    // shape.setFillColor(sf::Color::Green);
 
-    while (window.isOpen())
+    // while (window.isOpen())
+    // {
+    //     sf::Event event;
+    //     while (window.pollEvent(event))
+    //     {
+    //         if (event.type == sf::Event::Closed)
+    //             window.close();
+    //     }
+
+    //     window.clear();
+    //     window.draw(shape);
+    //     window.display();
+    // }
+ sf::RenderWindow window(sf::VideoMode(800,600),"Snake Game");
+
+ // creating a rectangle shape for the snake
+ sf::RectangleShape snake(sf::Vector2f(20,20));
+ snake.setFillColor(sf::Color::Green);
+ snake.setPosition(400,300);
+
+ while(window.isOpen())
+ {
+    sf::Event event;
+    while (window.pollEvent(event))
     {
-        sf::Event event;
-        while (window.pollEvent(event))
+        if(event.type == sf::Event::Closed)
         {
-            if (event.type == sf::Event::Closed)
-                window.close();
+            window.close();
         }
-
-        window.clear();
-        window.draw(shape);
-        window.display();
     }
+    window.clear();
+    window.draw(snake);
+    window.display();
+    }
+
 
     return 0;
 }
-
-
-// #include <iostream>
-// using namespace std;
-
-// int main(){
-
-//     // sf::RenderWindow windows(sf::VideoMode(800,600), "Snamke Game");
-    
-
-//     // sanity check 
-//     cout << "hello world again " << endl;
-//     return 0;
-// }
-
-// #include <SFML/Graphics.hpp>
-
-// #include<SFML/Graphics.hpp>
-
-// int main()
-// {
-//     sf::RenderWindow window(sf::VideoMode(200, 200), "SFML works!");
-//     sf::CircleShape shape(100.f);
-//     shape.setFillColor(sf::Color::Green);
-
-//     while (window.isOpen())
-//     {
-//         sf::Event event;
-//         while (window.pollEvent(event))
-//         {
-//             if (event.type == sf::Event::Closed)
-//                 window.close();
-//         }
-
-//         window.clear();
-//         window.draw(shape);
-//         window.display();
-//     }
-
-//     return 0;
-// }
