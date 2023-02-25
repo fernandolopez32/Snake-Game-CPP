@@ -5,7 +5,7 @@
 
 class Snake{
     public:
-        snake(float block_size, sf::Color color);
+        Snake(float block_size, sf::Color color);
         void move();
         void grow();
         void reder(sf::RenderWindow& window);
