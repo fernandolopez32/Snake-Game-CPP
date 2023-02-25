@@ -8,7 +8,7 @@ class Game{
         Game();
         void run();
     private:
-        vod processEvents();
+        void processEvents();
         void update(sf::Time deltaTime);
         void reder();
         void handlePlayerInput(sf::Keyboard::Key key);
