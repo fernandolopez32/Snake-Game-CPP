@@ -57,8 +57,8 @@ Snake :: Snake(float block_size,sf::Color color)
 
     bool Snake::is_colliding_with_wall(float window_width, float window_height) const
     {
-        // check i the head block is colliding with any of the windows boundaries
-        float x = m_blocks[0].getPosition().x;
-        float y = m_blocks[0].getPosition().y;
-        return (x<0 || x+ m_block_size > window_width || y < 0 || y + m_block_size > window_height);
+            // check i the head block is colliding with any of the windows boundaries
+            float x = m_blocks[0].getPosition().x;
+            float y = m_blocks[0].getPosition().y;
+        return (x < 0 || x + m_block_size > window_width || y < 0 || y + m_block_size > window_height);
     }
