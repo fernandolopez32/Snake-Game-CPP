@@ -1,7 +1,7 @@
 #pragma once
 
 #include<SFML/Graphics.hpp>
-#include"snake.hpp"
+#include"../snake/snake.hpp"
 
 class Game{
     public: 
